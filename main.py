@@ -5,12 +5,12 @@ import time
 
 # --- TICKET #2: DESIGN THE BLUEPRINT ---
 class BattleBot:
-    def __init__(self, name):
+    def __init__(self, name, max_health, attack, defense):
         self.name = name
-        self.max_health = 100
-        self.current_health = 100
-        self.strength = random.randint(10, 20)  # RNG Strength
-        self.defense = random.randint(0, 5)     # RNG Defense
+        self.max_health = max_health
+        self.current_health = max_health
+        self.strength = attack  # RNG Strength
+        self.defense = defense    # RNG Defense
         
         print(f"🤖 FACTORY: Built {self.name} | STR: {self.strength} | DEF: {self.defense}")
 
