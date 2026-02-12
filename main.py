@@ -1,6 +1,8 @@
 import random
 import time
 
+# AI slop code
+
 # --- TICKET #2: DESIGN THE BLUEPRINT ---
 class BattleBot:
     def __init__(self, name):
